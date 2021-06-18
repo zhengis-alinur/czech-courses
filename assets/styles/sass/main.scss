@@ -1,0 +1,228 @@
+@font-face {
+	font-family: 'TRY Clother';
+	src: url('../../fonts/try_clother.eot'); /* IE 9 Compatibility Mode */
+	src: url('../../fonts/try_clother.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../../fonts/try_clother.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../../fonts/try_clother.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../../fonts/try_clother.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../../fonts/try_clother.svg#try_clother') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+$blue: #245f77;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+  font-family: 'TRY Clother';
+  font-size: 20px;
+}
+
+.header, .footer {
+  display: flex;
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+  ul {
+    list-style: none;
+    li {
+      display: inline-block;
+      margin-left: 20px;
+    }
+  }
+}
+
+.footer {
+  
+}
+
+.container {
+  position: relative;
+  width: 80%;
+  margin: 20px auto;
+  padding: 30px 100px;
+  border-radius: 30px;
+  background-color: #f7f5f6;
+  box-shadow: 0 0 15px 15px #d8d5d5;
+  overflow: hidden;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+
+.title {
+  font-size: 50px;
+  margin-bottom: 60px;
+  color: $blue;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  opacity: 10%;
+  z-index: 0;
+}
+
+.intro {
+  display: flex;
+  position: static;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  .title {
+    width: 500px;
+    margin-top: 100px;
+  }
+  .subtitle {
+    margin-top: 40px;
+    color: gray;
+    font-size: 20px;
+  }
+
+  .action-btns {
+    display: flex;
+    margin-top: 40px;
+    width: 20%;
+    justify-content: space-between;
+    a {
+      text-decoration: none;
+    }
+  }
+  .intro-img {
+    position: absolute;
+    right: -100px;
+    top: -100px;
+    width: 60%;
+  }
+  a.button10 {
+    display: inline-block;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    user-select: none;
+    padding: 10px 20px;
+    outline: none;
+    border: 1px solid rgb(250,172,17);
+    border-radius: 7px;
+    background: #ffba78 linear-gradient(149deg, #ffba78, #ff816e);
+    box-shadow: inset 0 -2px 1px rgba(0,0,0,0), inset 0 1px 2px rgba(0,0,0,0), inset 0 0 0 60px rgba(255,255,0,0);
+    transition: box-shadow .2s, border-color .2s;
+  } 
+  a.button10:hover {
+    box-shadow: inset 0 -1px 1px rgba(0,0,0,0), inset 0 1px 2px rgba(0,0,0,0), inset 0 0 0 60px rgba(255,255,0,.5);
+  }
+  a.button10:active {
+    border-color: rgba(177,159,0,1);
+    box-shadow: inset 0 -1px 1px rgba(0,0,0,.1), inset 0 1px 2px rgba(0,0,0,.3), inset 0 0 0 60px rgba(255,255,0,.45);
+  }
+}
+
+.about {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  .personal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    p {
+      width: 50%;
+    }
+    .personal-photo {
+      width: 30%;
+    }
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+  color: #fff;
+  border-radius: 20px;
+  background: #ffba78 linear-gradient(149deg, #ffba78, #ff816e);
+  .card-title {
+    font-weight: bold;
+  }
+  .card-info {
+    font-size: 20px;
+    font-weight: normal;
+  }
+  &.white {
+    background: none;
+    color: $blue;
+    background-color: #fff;
+    .card-info {
+      color: gray;
+    }
+  }
+  img {
+    width: 100px;
+  }
+}
+
+.education {
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 40px;
+  padding: 30px;
+  box-shadow: 0 0 15px 15px #d8d5d5;
+  background-color: #fff;
+  z-index: 10;
+  .title {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  .edu-info {
+  }
+  .edu {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.products {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 100px;
+  .title {
+    font-weight: bold;
+  }
+  .subtitle {
+    max-width: 500px;
+  }
+  .reasons {
+    display: flex;
+    width: 600px;
+    flex-wrap: wrap;
+  }
+  .card {
+    padding: 40px 20px;
+    margin: 20px 20px;
+    &.shift {
+      position: relative;
+      top: 80px;
+    }
+  }
+}
+
+.feedback {
+  margin-top: 100px;
+  height: 500px;
+}
