@@ -1,0 +1,22 @@
+{
+  "name": "aiym-page",
+  "version": "1.0.0",
+  "description": "czech courses landing page I.Aiym",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhengis-alinur/czech-courses.git"
+  },
+  "author": "Zhengis Alinur <zhengis.alinur.erzhan@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhengis-alinur/czech-courses/issues"
+  },
+  "homepage": "https://github.com/zhengis-alinur/czech-courses#readme",
+  "dependencies": {
+    "firebase": "^8.6.8"
+  }
+}
